@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Salón de Belleza</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+  <body>
+    <div class="contenedor-estetica">
+      <div class="imagen"></div>
+      <div class="app contenedor">
+        <header class="header">
+          <h1>App Peluqueria</h1>
+          <nav class="tabs">
+            <button class="boton" type="button" data-paso="1">Servicios</button>
+            <button class="boton" type="button" data-paso="2">
+              Informacion Cliente
+            </button>
+            <button class="boton" type="button" data-paso="3">Resumen</button>
+          </nav>
+        </header>
+
+        <!-- Inicio del contenido app -->
+        <div id="paso-1" class="seccion">
+          <h2>Servicios</h2>
+          <p class="text-center">Elige tus Servicios a continuacion</p>
+          <div id="servicios" class="listado-servicios"></div>
+        </div>
+        <div id="paso-2" class="seccion">
+          <h2>Tus Datos y Cita</h2>
+        </div>
+        <div id="paso-3" class="seccion">
+          <h2>Resumen</h2>
+        </div>
+      </div>
+    </div>
+    <script src="build/js/bundle.min.js"></script>
+  </body>
+</html>
